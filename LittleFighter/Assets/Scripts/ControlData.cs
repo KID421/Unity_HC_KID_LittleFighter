@@ -24,4 +24,6 @@ public class ControlData : ScriptableObject
     public string character;
     [Header("確認選取角色")]
     public bool chooseCharacter;
+    [Header("玩家編號")]
+    public int index;
 }

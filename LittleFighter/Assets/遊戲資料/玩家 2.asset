@@ -19,3 +19,6 @@ MonoBehaviour:
   attack: 257
   defence: 258
   jump: 259
+  character: 
+  chooseCharacter: 0
+  index: 2
