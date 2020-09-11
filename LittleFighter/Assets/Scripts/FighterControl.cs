@@ -107,6 +107,12 @@ public class FighterControl : MonoBehaviour
     private float maxMp;
     #endregion
 
+    #region 定義事件
+    public delegate void delegateMethod(int playerIndex);
+
+    public event delegateMethod onDead;
+    #endregion
+
     #region 事件
     private void Start()
     {
@@ -361,6 +367,8 @@ public class FighterControl : MonoBehaviour
     {
         ani.SetBool("死亡開關", true);               // 死亡動畫
         enabled = false;                            // 停止此腳本
+
+        onDead(data.index);
     }
 
     /// <summary>

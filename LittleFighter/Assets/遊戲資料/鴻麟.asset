@@ -25,7 +25,7 @@ MonoBehaviour:
   skill:
     name: "\u5143\u6C23\u5F48"
     skillInputs: 040000000200000003000000
-    damage: 100
+    damage: 90
     cost: 20
     interval: 0.5
     skillObject: {fileID: 6735310152295738189, guid: 7aa00a6341e9775459cc7b74276b1282,

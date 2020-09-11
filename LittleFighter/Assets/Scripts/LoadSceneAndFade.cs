@@ -40,4 +40,17 @@ public class LoadSceneAndFade : MonoBehaviour
 
         SceneManager.LoadScene(nameScene);
     }
+
+    /// <summary>
+    /// 離開遊戲
+    /// </summary>
+    public void Quit()
+    {
+        Invoke("DelayQuit", 2f);
+    }
+
+    private void DelayQuit()
+    {
+        Application.Quit();
+    }
 }
