@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 6397936c655e1634ead21483544bcd05, type: 3}
   _name: "\u6770\u751F"
-  prefab: {fileID: 4003401546155136830, guid: a449c6bf355e4d849808e058cfc346a2, type: 3}
+  prefab: {fileID: 4003401546155136830, guid: de3b18ed13bb5b04096714a76a4aa5f9, type: 3}
   speed: 10
   hp: 300
   mp: 50
