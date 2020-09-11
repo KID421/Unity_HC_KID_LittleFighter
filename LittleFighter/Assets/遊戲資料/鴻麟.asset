@@ -15,17 +15,18 @@ MonoBehaviour:
   sprite: {fileID: 0}
   _name: "\u9D3B\u9E9F"
   speed: 10
-  hp: 100
+  hp: 300
   mp: 50
   jump: 500
   attack: 10
-  skill1:
+  restoreHp: 10
+  restoreMp: 5
+  skill:
     name: "\u5143\u6C23\u5F48"
-    skillType: 0
-    skillInputs: 020000000200000003000000
+    skillInputs: 040000000200000003000000
     damage: 50
     cost: 20
-    interval: 0.3
+    interval: 0.5
     skillObject: {fileID: 6735310152295738189, guid: 7aa00a6341e9775459cc7b74276b1282,
       type: 3}
     speed: 1200
