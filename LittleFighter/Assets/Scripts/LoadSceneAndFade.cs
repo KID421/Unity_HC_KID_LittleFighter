@@ -1,0 +1,43 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
+/// <summary>
+/// 載入場景並且淡入
+/// 按鈕：要啟動載入場景的按鈕
+/// </summary>
+public class LoadSceneAndFade : MonoBehaviour
+{
+    [Header("黑畫面")]
+    public Image imgBlack;
+    [Header("要載入的場景名稱")]
+    public string nameScene;
+
+    /// <summary>
+    /// 按鈕：要進入下一個場景的按鈕
+    /// </summary>
+    public void StartGame()
+    {
+        StartCoroutine(DelayStartGame());
+    }
+
+    /// <summary>
+    /// 延遲開始遊戲：讓音效播完
+    /// </summary>
+    private IEnumerator DelayStartGame()
+    {
+        Color color = imgBlack.color;
+
+        while (color.a < 1)
+        {
+            color.a += 0.05f;
+            imgBlack.color = color;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        SceneManager.LoadScene(nameScene);
+    }
+}

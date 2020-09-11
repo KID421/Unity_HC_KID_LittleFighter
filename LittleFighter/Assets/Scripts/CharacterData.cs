@@ -7,6 +7,8 @@ public class CharacterData : ScriptableObject
     public Sprite sprite;
     [Header("名稱")]
     public string _name;
+    [Header("預製物件")]
+    public GameObject prefab;
     [Header("移動速度"), Range(0.1f, 50f)]
     public float speed;
     [Header("血量"), Range(1, 5000)]

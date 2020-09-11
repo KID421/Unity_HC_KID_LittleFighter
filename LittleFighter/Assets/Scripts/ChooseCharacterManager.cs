@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ChooseCharacterManager : MonoBehaviour
@@ -8,10 +7,10 @@ public class ChooseCharacterManager : MonoBehaviour
     public ControlData[] players;
     [Header("角色圖像")]
     public Image[] imgCharacters;
-    [Header("所有角色圖像")]
-    public Sprite[] spriteCharacters;
     [Header("確認音效")]
     public AudioClip soundOK;
+    [Header("所有角色資料")]
+    public CharacterData[] characters;
 
     /// <summary>
     /// 選取角色編號，預設玩家 1 為 0，玩家 2 為 1
@@ -54,7 +53,7 @@ public class ChooseCharacterManager : MonoBehaviour
                 if (indexes[i] == 2) indexes[i] = 0;                                // 如果 最大值 就改回 0
             }
 
-            imgCharacters[i].sprite = spriteCharacters[indexes[i]];                 // 更新角色圖像
+            imgCharacters[i].sprite = characters[indexes[i]].sprite;                // 更新角色圖像
 
             if (Input.GetKeyDown(players[i].attack) && !players[i].chooseCharacter) // 如果按下攻擊 並且 尚未選取
             {
@@ -62,6 +61,7 @@ public class ChooseCharacterManager : MonoBehaviour
                 aud.pitch = 1;                                                      // 音調正常
                 aud.PlayOneShot(soundOK);                                           // 音效
                 imgCharacters[i].color = new Color(1, 1, 1, 0.5f);                  // 圖像半透明代表選取
+                players[i].dataCharacter = characters[indexes[i]];                  // 設定角色選取的角色資料
             }
 
             if (Input.GetKeyDown(players[i].defence) && players[i].chooseCharacter) // 如果按下防禦 並且 已經選取

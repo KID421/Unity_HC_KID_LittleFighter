@@ -103,7 +103,7 @@ public class FighterControl : MonoBehaviour
     #endregion
 
     #region 事件
-    private void Awake()
+    private void Start()
     {
         rig = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();
@@ -125,6 +125,8 @@ public class FighterControl : MonoBehaviour
 
         hp = maxHp;
         mp = maxMp;
+
+        textName.text = "玩家 " + data.index;
 
         SwitchSkillInput();                         // 將技能輸入文字轉為按鍵
     }

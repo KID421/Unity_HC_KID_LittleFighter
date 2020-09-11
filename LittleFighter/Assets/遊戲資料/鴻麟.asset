@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b21cc6ae1e49604fa73ac8217c924b9, type: 3}
   m_Name: "\u9D3B\u9E9F"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: d8d602266f472a948afe77248a14afa3, type: 3}
   _name: "\u9D3B\u9E9F"
+  prefab: {fileID: 4003401546155136830, guid: a449c6bf355e4d849808e058cfc346a2, type: 3}
   speed: 10
   hp: 300
   mp: 50
   jump: 500
-  attack: 10
-  restoreHp: 10
+  attack: 20
+  restoreHp: 2
   restoreMp: 5
   skill:
     name: "\u5143\u6C23\u5F48"
     skillInputs: 040000000200000003000000
-    damage: 50
+    damage: 100
     cost: 20
     interval: 0.5
     skillObject: {fileID: 6735310152295738189, guid: 7aa00a6341e9775459cc7b74276b1282,
