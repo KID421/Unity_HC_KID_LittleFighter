@@ -31,3 +31,4 @@ MonoBehaviour:
     skillObject: {fileID: 6735310152295738189, guid: 7aa00a6341e9775459cc7b74276b1282,
       type: 3}
     speed: 1200
+    sound: {fileID: 8300000, guid: d3954cb932d62f442af17c3488a54041, type: 3}

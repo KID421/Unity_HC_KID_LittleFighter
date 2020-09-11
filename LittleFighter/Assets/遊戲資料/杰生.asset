@@ -19,15 +19,16 @@ MonoBehaviour:
   hp: 300
   mp: 50
   jump: 500
-  attack: 10
-  restoreHp: 10
-  restoreMp: 5
+  attack: 30
+  restoreHp: 3
+  restoreMp: 6
   skill:
-    name: "\u5143\u6C23\u5F48"
+    name: "\u706B\u7130\u5F48"
     skillInputs: 040000000200000003000000
-    damage: 50
-    cost: 20
+    damage: 90
+    cost: 30
     interval: 0.5
-    skillObject: {fileID: 6735310152295738189, guid: 7aa00a6341e9775459cc7b74276b1282,
+    skillObject: {fileID: 7424882939085722969, guid: 09fcbecb4c9f11144bbd3525e4c65f57,
       type: 3}
-    speed: 1200
+    speed: 700
+    sound: {fileID: 8300000, guid: 3c5b903b83f460048a727c0630c89dbc, type: 3}

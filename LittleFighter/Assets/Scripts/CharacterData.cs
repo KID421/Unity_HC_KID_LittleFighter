@@ -63,4 +63,6 @@ public class Skill
     public GameObject skillObject;
     [Header("生成物速度"), Range(100, 3000)]
     public float speed;
+    [Header("技能音效")]
+    public AudioClip sound;
 }

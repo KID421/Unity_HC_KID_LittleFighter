@@ -19,11 +19,16 @@ public class FighterControl : MonoBehaviour
     public float interval = 0.3f;
     [Header("技能生成位置")]
     public Transform pointSpawn;
+    [Header("音效區域：攻擊、受傷、跳躍、死亡")]
+    public AudioClip soundAttack;
+    public AudioClip soundHit;
+    public AudioClip soundJump;
     #endregion
 
     #region 元件與物件：私人
     private Rigidbody rig;
     private Animator ani;
+    private AudioSource aud;
 
     /// <summary>
     /// 陰影
@@ -107,6 +112,7 @@ public class FighterControl : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();
+        aud = GetComponent<AudioSource>();
 
         shadow = transform.Find("陰影");
         canvas = transform.Find("畫布");
@@ -127,6 +133,8 @@ public class FighterControl : MonoBehaviour
         mp = maxMp;
 
         textName.text = "玩家 " + data.index;
+
+        if (data.index == 1) gameObject.layer = 8; else gameObject.layer = 9;           // 如果編號為 1 圖層：8 否則 圖層：9
 
         SwitchSkillInput();                         // 將技能輸入文字轉為按鍵
     }
@@ -197,6 +205,8 @@ public class FighterControl : MonoBehaviour
 
         if (Input.GetKeyDown(data.jump) && isGround)                                            // 如果 按下 跳躍 並且 在地板上
         {
+            aud.pitch = Random.Range(0.9f, 1f);
+            aud.PlayOneShot(soundJump, Random.Range(0.6f, 1f));
             isGround = false;                                                                   // 不在地板上
             rig.AddForce(0, jump, 0);                                                           // 推力
             ani.SetBool("跳躍開關", !isGround);                                                  // 跳躍動畫開啟
@@ -234,6 +244,12 @@ public class FighterControl : MonoBehaviour
     {
         if (Input.GetKeyDown(data.attack))
         {
+            if (!aud.isPlaying)
+            {
+                aud.pitch = Random.Range(0.9f, 1f);
+                aud.PlayOneShot(soundAttack, Random.Range(0.6f, 1f));
+            }
+
             ani.SetTrigger("攻擊觸發");
         }
     }
@@ -263,6 +279,8 @@ public class FighterControl : MonoBehaviour
                 imgMp.fillAmount = mp / maxMp;                                                                                              // 更新介面
                 ani.SetTrigger("招式觸發");                                                                                                  // 觸發招式動畫
                 Invoke("SkillDelaySpawn", dataCharacter.skill.interval);                                                                    // 如果為遠距離 延遲呼叫 技能延遲生成
+                aud.pitch = Random.Range(0.9f, 1f);
+                aud.PlayOneShot(dataCharacter.skill.sound, Random.Range(0.6f, 1f));                                                                                 // 播放技能音效
             }
         }
 
@@ -289,10 +307,11 @@ public class FighterControl : MonoBehaviour
     /// </summary>
     private void SkillDelaySpawn()
     {
-        GameObject temp = Instantiate(dataCharacter.skill.skillObject, pointSpawn.position, Quaternion.identity);      // 生成技能物件
-        temp.GetComponent<Rigidbody>().AddForce(-transform.right * dataCharacter.skill.speed);                         // 添加速度
+        GameObject temp = Instantiate(dataCharacter.skill.skillObject, pointSpawn.position, Quaternion.identity);       // 生成技能物件
+        Physics.IgnoreCollision(GetComponent<BoxCollider>(), temp.GetComponent<SphereCollider>());                      // 忽略碰撞
+        temp.GetComponent<Rigidbody>().AddForce(-transform.right * dataCharacter.skill.speed);                          // 添加速度
         SkillObject skill = temp.AddComponent<SkillObject>();                                                           // 添加技能物件腳本
-        skill.damage = dataCharacter.skill.damage;                                                                     // 設定傷害值
+        skill.damage = dataCharacter.skill.damage;                                                                      // 設定傷害值
         skill.player = gameObject;                                                                                      // 設定玩家
     }
 
@@ -365,11 +384,18 @@ public class FighterControl : MonoBehaviour
     public void Damage(float damage)
     {
         float d = isDefense ? damage / 2 : damage;      // 如果防禦狀態，傷害除以二
+        aud.pitch = isDefense ? 0.5f : Random.Range(0.9f, 1f);
+        aud.PlayOneShot(soundHit, Random.Range(0.6f, 1f));
         hp -= d;                                        // 扣血
         imgHp.fillAmount = hp / maxHp;                  // 更新介面
         ani.SetTrigger("受傷觸發");                      // 受傷動畫
 
         if (hp <= 0) Dead();                            // 如果血量 <= 0 死亡
+    }
+
+    public void PlaySound(AudioClip sound, float volume)
+    {
+        aud.PlayOneShot(sound, volume);
     }
     #endregion
 }
