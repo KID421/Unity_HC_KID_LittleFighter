@@ -15,18 +15,18 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 6397936c655e1634ead21483544bcd05, type: 3}
   _name: "\u6770\u751F"
   prefab: {fileID: 4003401546155136830, guid: de3b18ed13bb5b04096714a76a4aa5f9, type: 3}
-  speed: 10
-  hp: 300
-  mp: 50
+  speed: 8
+  hp: 500
+  mp: 100
   jump: 500
-  attack: 30
-  restoreHp: 3
-  restoreMp: 6
+  attack: 35
+  restoreHp: 6
+  restoreMp: 3
   skill:
     name: "\u706B\u7130\u5F48"
-    skillInputs: 040000000200000003000000
+    skillInputs: 040000000100000003000000
     damage: 100
-    cost: 30
+    cost: 20
     interval: 0.5
     skillObject: {fileID: 7424882939085722969, guid: 09fcbecb4c9f11144bbd3525e4c65f57,
       type: 3}

@@ -22,4 +22,4 @@ MonoBehaviour:
   character: 
   chooseCharacter: 0
   index: 2
-  dataCharacter: {fileID: 11400000, guid: 0e2fadbf31bb56e4593efd24151d31b3, type: 2}
+  dataCharacter: {fileID: 11400000, guid: 24fc16de8441b824583b7740ed933f95, type: 2}

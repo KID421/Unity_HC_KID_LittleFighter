@@ -23,6 +23,7 @@ public class FighterControl : MonoBehaviour
     public AudioClip soundAttack;
     public AudioClip soundHit;
     public AudioClip soundJump;
+    public AudioClip soundDead;
     #endregion
 
     #region 元件與物件：私人
@@ -365,8 +366,10 @@ public class FighterControl : MonoBehaviour
     /// </summary>
     private void Dead()
     {
-        ani.SetBool("死亡開關", true);               // 死亡動畫
-        enabled = false;                            // 停止此腳本
+        ani.SetBool("死亡開關", true);                           // 死亡動畫
+        enabled = false;                                        // 停止此腳本
+        aud.pitch = Random.Range(0.7f, 1f);
+        aud.PlayOneShot(soundDead, Random.Range(0.7f, 1f));
 
         onDead(data.index);
     }

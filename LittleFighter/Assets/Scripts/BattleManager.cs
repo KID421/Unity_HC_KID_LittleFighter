@@ -27,6 +27,8 @@ public class BattleManager : MonoBehaviour
     private IEnumerator ShowFinalPanel(int playerIndex)
     {
         Image img = panelFinal.GetComponent<Image>();
+        panelFinal.GetComponent<CanvasGroup>().interactable = true;
+        panelFinal.GetComponent<CanvasGroup>().blocksRaycasts = true;
 
         int win = playerIndex == 1 ? 2 : 1;
         panelFinal.Find("訊息").GetComponent<Text>().text = "恭喜【玩家 " + win + " 】獲勝";

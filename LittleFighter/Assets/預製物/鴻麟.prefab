@@ -1900,6 +1900,7 @@ MonoBehaviour:
   soundAttack: {fileID: 8300000, guid: 63cd23b6aaa92f946bd96c32ff5e5bf1, type: 3}
   soundHit: {fileID: 8300000, guid: f6f60d43ad837f8458b4d01a57ffb2ab, type: 3}
   soundJump: {fileID: 8300000, guid: 71c2c7f7b9747374da510ca8ca5c84ab, type: 3}
+  soundDead: {fileID: 8300000, guid: 9020e250c23fc574fb5b75dd1dd5f80c, type: 3}
 --- !u!82 &4593176529218576821
 AudioSource:
   m_ObjectHideFlags: 0
