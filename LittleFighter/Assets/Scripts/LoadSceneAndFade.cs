@@ -53,4 +53,13 @@ public class LoadSceneAndFade : MonoBehaviour
     {
         Application.Quit();
     }
+
+    /// <summary>
+    /// 開啟連結
+    /// </summary>
+    /// <param name="web">網址</param>
+    public void OpenLink(string web)
+    {
+        Application.OpenURL(web);
+    }
 }
