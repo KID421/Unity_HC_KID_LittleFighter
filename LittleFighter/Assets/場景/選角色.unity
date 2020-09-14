@@ -541,8 +541,10 @@ MonoBehaviour:
   - {fileID: 1000190903}
   soundOK: {fileID: 8300000, guid: 8c617a21b5e47e54d97facb722f82c2d, type: 3}
   characters:
-  - {fileID: 11400000, guid: 0e2fadbf31bb56e4593efd24151d31b3, type: 2}
   - {fileID: 11400000, guid: 24fc16de8441b824583b7740ed933f95, type: 2}
+  - {fileID: 11400000, guid: 0e2fadbf31bb56e4593efd24151d31b3, type: 2}
+  - {fileID: 11400000, guid: 023ac4e7177c53b44ac47a5d76936896, type: 2}
+  - {fileID: 11400000, guid: 72d81406c16fefc42856996e4c9430fa, type: 2}
   btnOK: {fileID: 1761053659}
 --- !u!82 &732472336
 AudioSource:
@@ -1576,7 +1578,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6397936c655e1634ead21483544bcd05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8d602266f472a948afe77248a14afa3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1795,7 +1797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8d602266f472a948afe77248a14afa3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6397936c655e1634ead21483544bcd05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

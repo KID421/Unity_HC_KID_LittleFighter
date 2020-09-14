@@ -56,13 +56,13 @@ public class ChooseCharacterManager : MonoBehaviour
             {
                 indexes[i]--;                                                       // 編號遞減
 
-                if (indexes[i] == -1) indexes[i] = 1;                               // 如果 -1 就改回 最大值 1
+                if (indexes[i] == -1) indexes[i] = 3;                               // 如果 -1 就改回 最大值 1
             }
             if (Input.GetKeyDown(players[i].right) && !players[i].chooseCharacter)  // 按下右 並且 尚未選取
             {
                 indexes[i]++;                                                       // 編號遞增
 
-                if (indexes[i] == 2) indexes[i] = 0;                                // 如果 最大值 就改回 0
+                if (indexes[i] == 4) indexes[i] = 0;                                // 如果 最大值 就改回 0
             }
 
             imgCharacters[i].sprite = characters[indexes[i]].sprite;                // 更新角色圖像
