@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b21cc6ae1e49604fa73ac8217c924b9, type: 3}
   m_Name: "\u7D05\u4E03\u516C"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 1489857101919630952, guid: 46a9a1c518587b8459e7b9146f92fd3b, type: 3}
+  sprite: {fileID: 21300000, guid: 67fb546cca352bf41960d09ca1278c13, type: 3}
   _name: "\u7D05\u4E03\u516C"
-  prefab: {fileID: 1313782398198930473, guid: 5f06bb7e35695564da88656c868b83fa, type: 3}
+  prefab: {fileID: 9205299032380689446, guid: c34007e11661ca1459165fe4209776c8, type: 3}
   speed: 15
   hp: 1000
   mp: 100

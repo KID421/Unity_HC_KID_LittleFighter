@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b21cc6ae1e49604fa73ac8217c924b9, type: 3}
   m_Name: "\u9EC3\u5B50\u6046"
   m_EditorClassIdentifier: 
-  sprite: {fileID: 6311857949556848696, guid: c09a3d01d42c64742b1b37b4f6b950ab, type: 3}
+  sprite: {fileID: 21300000, guid: 5da000758967bc944aa38ca094c080b5, type: 3}
   _name: "\u9EC3\u5B50\u6046"
   prefab: {fileID: 4552178413667399760, guid: c6f1356a4a8512146827acf9b0ca6eaf, type: 3}
   speed: 10

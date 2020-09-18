@@ -10,10 +10,19 @@ ScriptsOnlyBuild:
     - LoadSceneAndFade
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.Animation.Runtime.dll:
     - UnityEngine.U2D.Animation.SpriteSkin
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -68,35 +77,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 11232}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11528}
     - Class: 114
-      Script: {instanceID: 11496}
+      Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12164}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12390}
     - Class: 114
-      Script: {instanceID: 12320}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 13064}
     - Class: 114
-      Script: {instanceID: 13082}
+      Script: {instanceID: 13166}
     - Class: 114
-      Script: {instanceID: 13252}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13436}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 13988}
+      Script: {instanceID: 14072}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,21 +160,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11528}
     - Class: 114
-      Script: {instanceID: 11496}
+      Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12164}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13436}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 13988}
+      Script: {instanceID: 14072}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -212,33 +221,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 11232}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11196}
+      Script: {instanceID: 11280}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11444}
+      Script: {instanceID: 11528}
     - Class: 114
-      Script: {instanceID: 11496}
+      Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12164}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12390}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 13064}
     - Class: 114
-      Script: {instanceID: 13082}
+      Script: {instanceID: 13166}
     - Class: 114
-      Script: {instanceID: 13436}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 13988}
+      Script: {instanceID: 14072}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -771,4 +780,4 @@ ScriptsOnlyBuild:
   - "Assets/\u5834\u666F/\u9078\u55AE.unity"
   - "Assets/\u5834\u666F/\u9078\u89D2\u8272.unity"
   - "Assets/\u5834\u666F/\u5C0D\u6230\u5834\u666F.unity"
-  playerPath: C:/KID/Projects/Unity/Unity_HC_KID_LittleFighter/Web
+  playerPath: C:/KID/Projects/Unity/Unity_HC_KID_LittleFighter/WebNew
