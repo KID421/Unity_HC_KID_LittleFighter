@@ -16,9 +16,9 @@ MonoBehaviour:
   down: 115
   left: 97
   right: 100
-  attack: 103
-  defence: 104
-  jump: 106
+  attack: 101
+  defence: 114
+  jump: 116
   character: 
   chooseCharacter: 0
   index: 1
