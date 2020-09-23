@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測試網頁版</title>
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebV2.json", {onProgress: UnityProgress});
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="webgl-content">
+        <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">KID | 小屁孩齊打交</div>
+        </div>
+      </div>
+</body>
+</html>

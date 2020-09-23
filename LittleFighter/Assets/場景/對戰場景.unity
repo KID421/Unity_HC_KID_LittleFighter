@@ -605,7 +605,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ReferenceResolution: {x: 1280, y: 750}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1049,7 +1049,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 58923682}
         m_MethodName: StartGame
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 1217188153}
   - component: {fileID: 1217188152}
   m_Layer: 5
-  m_Name: "\u96E2\u958B\u904A\u6232"
+  m_Name: "\u56DE\u5230\u9078\u55AE"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1152,14 +1152,14 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 58923682}
-        m_MethodName: Quit
-        m_Mode: 1
+        m_MethodName: StartGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u9078\u55AE"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1217188153
@@ -1194,7 +1194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u96E2\u958B\u904A\u6232"
+  m_Text: "\u56DE\u5230\u9078\u55AE"
 --- !u!222 &1217188154
 CanvasRenderer:
   m_ObjectHideFlags: 0

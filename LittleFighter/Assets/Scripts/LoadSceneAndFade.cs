@@ -14,18 +14,23 @@ public class LoadSceneAndFade : MonoBehaviour
     [Header("要載入的場景名稱")]
     public string nameScene;
 
+    private void Awake()
+    {
+        Screen.SetResolution(1280, 750, false);
+    }
+
     /// <summary>
     /// 按鈕：要進入下一個場景的按鈕
     /// </summary>
-    public void StartGame()
+    public void StartGame(string name)
     {
-        StartCoroutine(DelayStartGame());
+        StartCoroutine(DelayStartGame(name));
     }
 
     /// <summary>
     /// 延遲開始遊戲：讓音效播完
     /// </summary>
-    private IEnumerator DelayStartGame()
+    private IEnumerator DelayStartGame(string name)
     {
         Color color = imgBlack.color;
 
@@ -37,6 +42,8 @@ public class LoadSceneAndFade : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+
+        if (name != "") nameScene = name;
 
         SceneManager.LoadScene(nameScene);
     }
