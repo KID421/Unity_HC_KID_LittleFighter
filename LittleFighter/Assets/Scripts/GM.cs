@@ -2,6 +2,17 @@
 
 public class GM : MonoBehaviour
 {
+    private void Start()
+    {
+#if (UNITY_WEBPLAYER || UNITY_WEBGL) && !UNITY_EDITOR
+    try {
+        Application.ExternalCall("GameControlReady");
+    } catch (System.Exception e) {
+        Debug.LogError("GameControlReady function not on webpage"+e);
+    }
+#endif
+    }
+
     // This function will be called from the webpage
     public void FocusCanvas(string p_focus)
     {
