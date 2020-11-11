@@ -11,7 +11,6 @@ ScriptsOnlyBuild:
     - LoadSceneAndFade
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.Animation.Runtime.dll:
     - UnityEngine.U2D.Animation.SpriteSkin
     Unity.Rider.Editor.dll:
@@ -19,10 +18,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -78,35 +75,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11242}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11476}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11702}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 12516}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12530}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13296}
+      Script: {instanceID: 13186}
     - Class: 114
-      Script: {instanceID: 13466}
+      Script: {instanceID: 13356}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 14094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -167,25 +164,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11702}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 14094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -236,33 +233,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11242}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11378}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11404}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11476}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11702}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 12516}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13296}
+      Script: {instanceID: 13186}
     - Class: 114
-      Script: {instanceID: 13650}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 14094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
