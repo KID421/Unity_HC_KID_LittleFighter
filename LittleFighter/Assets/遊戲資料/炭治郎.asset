@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b21cc6ae1e49604fa73ac8217c924b9, type: 3}
+  m_Name: "\u70AD\u6CBB\u90CE"
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: fea7f29db2c3f2045841c2755cbb91f8, type: 3}
+  _name: "\u70AD\u6CBB\u90CE"
+  prefab: {fileID: 1402390475736284179, guid: 4f5967ea2e7545942bff3d5630dca332, type: 3}
+  speed: 12
+  hp: 500
+  mp: 100
+  jump: 550
+  attack: 30
+  restoreHp: 3
+  restoreMp: 6
+  skill:
+    name: "\u6C34\u4E4B\u547C\u5438"
+    skillInputs: 040000000000000003000000
+    damage: 350
+    cost: 30
+    interval: 0.5
+    skillObject: {fileID: 6735310152295738189, guid: 7aa00a6341e9775459cc7b74276b1282,
+      type: 3}
+    speed: 500
+    sound: {fileID: 8300000, guid: 3c5b903b83f460048a727c0630c89dbc, type: 3}

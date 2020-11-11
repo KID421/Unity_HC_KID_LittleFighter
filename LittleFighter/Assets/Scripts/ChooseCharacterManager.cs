@@ -19,9 +19,9 @@ public class ChooseCharacterManager : MonoBehaviour
     public Button btnOK;
 
     /// <summary>
-    /// 選取角色編號，預設玩家 1 為 0，玩家 2 為 1
+    /// 選取角色編號，預設玩家 1 為 0，玩家 2 為 0
     /// </summary>
-    private int[] indexes = { 0, 1 };
+    private int[] indexes = { 0, 0 };
 
     private AudioSource aud;
 
@@ -32,7 +32,7 @@ public class ChooseCharacterManager : MonoBehaviour
         for (int i = 0; i < players.Length; i++)
         {
             players[i].dataCharacter = characters[i];
-            players[i].chooseCharacter = false;        // 遊戲一開始設定為尚未選取
+            players[i].chooseCharacter = false;                                     // 遊戲一開始設定為尚未選取
             imgCharacters[i].sprite = characters[indexes[i]].sprite;                // 更新角色圖像
             UpdateCharacterInformation(characters[indexes[i]], textCharacters[i]);  // 更新角色資訊
         }
@@ -56,13 +56,13 @@ public class ChooseCharacterManager : MonoBehaviour
             {
                 indexes[i]--;                                                       // 編號遞減
 
-                if (indexes[i] == -1) indexes[i] = 3;                               // 如果 -1 就改回 最大值 1
+                if (indexes[i] == -1) indexes[i] = characters.Length - 1;                               // 如果 -1 就改回 最大值 1
             }
             if (Input.GetKeyDown(players[i].right) && !players[i].chooseCharacter)  // 按下右 並且 尚未選取
             {
                 indexes[i]++;                                                       // 編號遞增
 
-                if (indexes[i] == 4) indexes[i] = 0;                                // 如果 最大值 就改回 0
+                if (indexes[i] == characters.Length) indexes[i] = 0;                                // 如果 最大值 就改回 0
             }
 
             imgCharacters[i].sprite = characters[indexes[i]].sprite;                // 更新角色圖像

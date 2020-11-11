@@ -541,10 +541,11 @@ MonoBehaviour:
   - {fileID: 1000190903}
   soundOK: {fileID: 8300000, guid: 8c617a21b5e47e54d97facb722f82c2d, type: 3}
   characters:
-  - {fileID: 11400000, guid: 24fc16de8441b824583b7740ed933f95, type: 2}
+  - {fileID: 11400000, guid: 7dd3b0505e0faf14992ec0bed732f381, type: 2}
   - {fileID: 11400000, guid: 0e2fadbf31bb56e4593efd24151d31b3, type: 2}
-  - {fileID: 11400000, guid: 023ac4e7177c53b44ac47a5d76936896, type: 2}
+  - {fileID: 11400000, guid: 24fc16de8441b824583b7740ed933f95, type: 2}
   - {fileID: 11400000, guid: 72d81406c16fefc42856996e4c9430fa, type: 2}
+  - {fileID: 11400000, guid: 023ac4e7177c53b44ac47a5d76936896, type: 2}
   btnOK: {fileID: 1761053659}
 --- !u!82 &732472336
 AudioSource:

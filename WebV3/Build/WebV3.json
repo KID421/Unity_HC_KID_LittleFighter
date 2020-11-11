@@ -1,0 +1,16 @@
+{
+"companyName": "KID",
+"productName": "KID | 小屁孩齊打交",
+"productVersion": "3.0",
+"dataUrl": "WebV3.data.unityweb",
+"wasmCodeUrl": "WebV3.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebV3.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#252525",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.13f1"
+}

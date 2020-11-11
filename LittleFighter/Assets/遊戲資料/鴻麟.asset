@@ -19,7 +19,7 @@ MonoBehaviour:
   hp: 350
   mp: 150
   jump: 500
-  attack: 25
+  attack: 15
   restoreHp: 3
   restoreMp: 6
   skill:
