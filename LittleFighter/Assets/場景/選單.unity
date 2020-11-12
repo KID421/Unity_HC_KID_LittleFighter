@@ -4882,7 +4882,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u9078\u89D2\u8272"
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 385192126}
@@ -6232,6 +6232,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -8950854632687728965, guid: 263e9e39bcf42b94badaf82e03f7d64c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -6926223574105042316, guid: 263e9e39bcf42b94badaf82e03f7d64c,
         type: 3}
       propertyPath: m_IsActive
@@ -6251,6 +6256,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "\u70AD\u6CBB\u90CE"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739128843984021843, guid: 263e9e39bcf42b94badaf82e03f7d64c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586477401248565472, guid: 263e9e39bcf42b94badaf82e03f7d64c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586477401248565472, guid: 263e9e39bcf42b94badaf82e03f7d64c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.989
       objectReference: {fileID: 0}
     - target: {fileID: 7316879737361232635, guid: 263e9e39bcf42b94badaf82e03f7d64c,
         type: 3}

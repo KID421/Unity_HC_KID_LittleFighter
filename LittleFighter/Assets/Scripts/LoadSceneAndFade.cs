@@ -16,7 +16,7 @@ public class LoadSceneAndFade : MonoBehaviour
 
     private void Awake()
     {
-        Screen.SetResolution(1280, 720, false);
+        if (SceneManager.GetActiveScene().name == "選單") Screen.SetResolution(1280, 720, false);
     }
 
     /// <summary>
