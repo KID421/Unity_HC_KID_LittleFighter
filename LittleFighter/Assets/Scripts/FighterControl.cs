@@ -1,7 +1,7 @@
-﻿using System.Xml;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 /// <summary>
 /// 對戰控制系統：移動、攻防跳與動畫
 /// </summary>

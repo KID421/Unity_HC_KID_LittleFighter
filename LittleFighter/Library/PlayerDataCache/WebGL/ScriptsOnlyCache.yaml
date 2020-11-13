@@ -10,7 +10,9 @@ ScriptsOnlyBuild:
     - GM
     - LoadSceneAndFade
     Unity.2D.Animation.Editor.dll:
+    - UnityEditor.U2D.Animation.BoneCache
     - UnityEditor.U2D.Animation.BoneGizmo
+    - UnityEditor.U2D.Animation.SkinningCachePersistentState
     Unity.2D.Animation.Runtime.dll:
     - UnityEngine.U2D.Animation.SpriteSkin
     Unity.Rider.Editor.dll:
@@ -75,35 +77,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 15316}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 15368}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 15850}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 15956}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 16178}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 16192}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 16220}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 16596}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 16856}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 16948}
+      Script: {instanceID: 13186}
     - Class: 114
-      Script: {instanceID: 17116}
+      Script: {instanceID: 13356}
     - Class: 114
-      Script: {instanceID: 17296}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 17844}
+      Script: {instanceID: 14094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,25 +166,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 15316}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 15368}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 15956}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 16220}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 16596}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 16708}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 16856}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 17296}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 17844}
+      Script: {instanceID: 14094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -233,33 +235,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 15072}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 15316}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 15368}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 15850}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 15956}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 16178}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 16220}
+      Script: {instanceID: 12448}
     - Class: 114
-      Script: {instanceID: 16596}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 16856}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 16948}
+      Script: {instanceID: 13186}
     - Class: 114
-      Script: {instanceID: 17296}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 17844}
+      Script: {instanceID: 14094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -289,6 +291,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -463,12 +471,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
-  - hash:
-      serializedVersion: 2
-      Hash: caa533b001ae39b864ba8425019e2268
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Shadow
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
